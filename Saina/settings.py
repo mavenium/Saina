@@ -137,3 +137,6 @@ STATICFILES_DIRS = [
 # Media Files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Image Validation
+MAX_IMAGE_SIZE = 2.0
