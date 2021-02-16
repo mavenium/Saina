@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -47,6 +48,24 @@ class SainaLink(models.Model):
         null=False,
         blank=False,
         editable=False
+    )
+    create_user = models.ForeignKey(
+        User,
+        verbose_name=_('Create User'),
+        null=False,
+        blank=False,
+        editable=False,
+        on_delete=models.PROTECT,
+        related_name='sainalink_create_user'
+    )
+    last_update_user = models.ForeignKey(
+        User,
+        verbose_name=_('Last Update User'),
+        null=False,
+        blank=False,
+        editable=False,
+        on_delete=models.PROTECT,
+        related_name='sainalink_last_update_user'
     )
 
     def __str__(self):
