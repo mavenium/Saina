@@ -41,6 +41,13 @@ class SainaLink(models.Model):
         blank=False,
         editable=False
     )
+    last_update_time = models.DateTimeField(
+        verbose_name=_('Last Update Time'),
+        auto_now=True,
+        null=False,
+        blank=False,
+        editable=False
+    )
 
     def __str__(self):
         return self.title
