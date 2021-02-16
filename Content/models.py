@@ -34,6 +34,13 @@ class SainaLink(models.Model):
         null=False,
         blank=True
     )
+    create_time = models.DateTimeField(
+        verbose_name=_('Create Time'),
+        auto_now_add=True,
+        null=False,
+        blank=False,
+        editable=False
+    )
 
     def __str__(self):
         return self.title
