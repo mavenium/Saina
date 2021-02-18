@@ -74,8 +74,8 @@ class SainaLink(models.Model):
         return self.title
 
     class Meta:
-        verbose_name_plural = _("Saina Link")
-        verbose_name = _("Saina Links")
+        verbose_name = _("Saina Link")
+        verbose_name_plural = _("Saina Links")
 
     def get_absolute_url(self):
         return f'/{self.slug}'
@@ -105,5 +105,5 @@ class SocialNetworksButton(models.Model):
         return self.title
 
     class Meta:
-        verbose_name_plural = _("Social Networks Button")
-        verbose_name = _("Social Networks Buttons")
+        verbose_name = _("Social Networks Button")
+        verbose_name_plural = _("Social Networks Buttons")
