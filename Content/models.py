@@ -80,4 +80,15 @@ class SainaLink(models.Model):
 
 
 class SocialNetworksButton(models.Model):
-    pass
+    icon = models.CharField(
+        verbose_name=_('Icon'),
+        max_length=16,
+        null=False,
+        blank=False
+    )
+    url = models.URLField(
+        verbose_name=_('URL'),
+        null=False,
+        blank=False
+    )
+
