@@ -77,3 +77,7 @@ class SainaLink(models.Model):
 
     def get_absolute_url(self):
         return f'/{self.slug}'
+
+
+class SocialNetworksButton(models.Model):
+    pass
