@@ -104,3 +104,6 @@ class SocialNetworksButton(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = _("Social Networks Button")
+        verbose_name = _("Social Networks Buttons")
