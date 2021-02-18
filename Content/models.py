@@ -5,6 +5,8 @@ from django.utils.translation import ugettext_lazy as _
 
 from extensions.custom_validations import image_validation_by_size
 
+from colorfield.fields import ColorField
+
 
 class SainaLink(models.Model):
     title = models.CharField(
@@ -80,6 +82,12 @@ class SainaLink(models.Model):
 
 
 class SocialNetworksButton(models.Model):
+    title = models.CharField(
+        verbose_name=_('Title'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
     icon = models.CharField(
         verbose_name=_('Icon'),
         max_length=16,
@@ -91,4 +99,8 @@ class SocialNetworksButton(models.Model):
         null=False,
         blank=False
     )
+    color = ColorField(default='#FF0000')
+
+    def __str__(self):
+        return self.title
 
