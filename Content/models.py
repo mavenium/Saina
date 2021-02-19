@@ -110,7 +110,12 @@ class SocialNetworksButton(models.Model):
 
 
 class SocialNetworksIcon(models.Model):
-    pass
+    title = models.CharField(
+        verbose_name=_('Title'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
 
 
 class Link(models.Model):
