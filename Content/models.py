@@ -116,6 +116,12 @@ class SocialNetworksIcon(models.Model):
         null=False,
         blank=False
     )
+    icon = models.CharField(
+        verbose_name=_('Icon'),
+        max_length=16,
+        null=False,
+        blank=False
+    )
 
 
 class Link(models.Model):
