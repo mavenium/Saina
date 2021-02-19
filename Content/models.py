@@ -127,6 +127,7 @@ class SocialNetworksIcon(models.Model):
         null=False,
         blank=False
     )
+    color = ColorField(default='#FF0000')
 
 
 class Link(models.Model):
