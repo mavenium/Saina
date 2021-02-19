@@ -122,6 +122,11 @@ class SocialNetworksIcon(models.Model):
         null=False,
         blank=False
     )
+    url = models.URLField(
+        verbose_name=_('URL'),
+        null=False,
+        blank=False
+    )
 
 
 class Link(models.Model):
