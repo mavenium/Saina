@@ -129,6 +129,13 @@ class SocialNetworksIcon(models.Model):
     )
     color = ColorField(default='#FF0000')
 
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("Social Networks Icon")
+        verbose_name_plural = _("Social Networks Icons")
+
 
 class Link(models.Model):
     title = models.CharField(
