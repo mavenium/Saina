@@ -109,6 +109,10 @@ class SocialNetworksButton(models.Model):
         verbose_name_plural = _("Social Networks Buttons")
 
 
+class SocialNetworksIcon(models.Model):
+    pass
+
+
 class Link(models.Model):
     title = models.CharField(
         verbose_name=_('Title'),
