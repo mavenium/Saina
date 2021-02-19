@@ -107,3 +107,24 @@ class SocialNetworksButton(models.Model):
     class Meta:
         verbose_name = _("Social Networks Button")
         verbose_name_plural = _("Social Networks Buttons")
+
+
+class Link(models.Model):
+    title = models.CharField(
+        verbose_name=_('Title'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
+    url = models.URLField(
+        verbose_name=_('URL'),
+        null=False,
+        blank=False
+    )
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("Link")
+        verbose_name_plural = _("Links")
