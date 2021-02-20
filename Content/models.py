@@ -159,4 +159,10 @@ class Link(models.Model):
 
 
 class Contact(models.Model):
-    pass
+    title = models.CharField(
+        verbose_name=_('Title'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
+
