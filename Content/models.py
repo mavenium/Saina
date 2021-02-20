@@ -177,3 +177,10 @@ class Contact(models.Model):
         null=False,
         blank=False
     )
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _("Contact")
+        verbose_name_plural = _("Contacts")
