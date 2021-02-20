@@ -171,3 +171,9 @@ class Contact(models.Model):
         null=False,
         blank=False
     )
+    content = models.CharField(
+        verbose_name=_('Content'),
+        max_length=16,
+        null=False,
+        blank=False
+    )
