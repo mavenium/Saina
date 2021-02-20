@@ -156,3 +156,7 @@ class Link(models.Model):
     class Meta:
         verbose_name = _("Link")
         verbose_name_plural = _("Links")
+
+
+class Contact(models.Model):
+    pass
