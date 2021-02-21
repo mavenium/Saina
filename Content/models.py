@@ -193,3 +193,10 @@ class FAQ(models.Model):
         null=False,
         blank=False
     )
+    answer = models.CharField(
+        verbose_name=_('Answer'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
+
