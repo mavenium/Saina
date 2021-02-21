@@ -202,3 +202,7 @@ class FAQ(models.Model):
 
     def __str__(self):
         return self.question
+
+    class Meta:
+        verbose_name = _("FAQ")
+        verbose_name_plural = _("FAQs")
