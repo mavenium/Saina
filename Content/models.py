@@ -184,3 +184,7 @@ class Contact(models.Model):
     class Meta:
         verbose_name = _("Contact")
         verbose_name_plural = _("Contacts")
+
+
+class FAQ(models.Model):
+    pass
