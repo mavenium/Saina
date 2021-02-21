@@ -187,4 +187,9 @@ class Contact(models.Model):
 
 
 class FAQ(models.Model):
-    pass
+    question = models.CharField(
+        verbose_name=_('Question'),
+        max_length=128,
+        null=False,
+        blank=False
+    )
