@@ -99,7 +99,9 @@ class SocialNetworksButton(models.Model):
         null=False,
         blank=False
     )
-    color = ColorField(default='#FF0000')
+    color = ColorField(
+        default='#FF0000'
+    )
 
     def __str__(self):
         return self.title
@@ -127,7 +129,9 @@ class SocialNetworksIcon(models.Model):
         null=False,
         blank=False
     )
-    color = ColorField(default='#FF0000')
+    color = ColorField(
+        default='#FF0000'
+    )
 
     def __str__(self):
         return self.title
