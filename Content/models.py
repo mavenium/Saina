@@ -159,12 +159,6 @@ class Link(models.Model):
 
 
 class Contact(models.Model):
-    title = models.CharField(
-        verbose_name=_('Title'),
-        max_length=128,
-        null=False,
-        blank=False
-    )
     icon = models.CharField(
         verbose_name=_('Icon'),
         max_length=16,
@@ -179,7 +173,7 @@ class Contact(models.Model):
     )
 
     def __str__(self):
-        return self.title
+        return self.content
 
     class Meta:
         verbose_name = _("Contact")
