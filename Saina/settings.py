@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'colorfield',
+    'Core.apps.CoreConfig',
     'Content.apps.ContentConfig'
 ]
 
