@@ -4,3 +4,13 @@
 {% block Title %}
     {% translate 'Login' %}
 {% endblock %}
+
+{% block Content %}
+    <section class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                {{ form }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
