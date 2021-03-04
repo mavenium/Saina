@@ -144,3 +144,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Image Validation
 MAX_IMAGE_SIZE = 2.0
 
+# CRISPY FORM
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
