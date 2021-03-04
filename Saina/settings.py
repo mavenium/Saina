@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'colorfield',
+    'crispy_forms',
     'Content.apps.ContentConfig'
 ]
 
@@ -142,3 +143,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Image Validation
 MAX_IMAGE_SIZE = 2.0
+
